@@ -1,0 +1,67 @@
+*{
+    font-family: 'Montserrat';
+    scroll-behavior: smooth !important;
+    color: #444444 !important;
+}
+:root{
+    --dark-orange: #a3a1fb;
+    --medium-orange: #56d9fe;
+    --light-orange: #ff8373;
+    --dark-purple: #7A5C61;
+    --dark-yellow: #ffda83;
+    --dark-blue: #4f6d7a;
+}
+.card p{
+    color: white !important;
+}
+.card h4{
+    color: white !important;
+    font-weight: 500 !important;
+}
+.dark-orange{
+    background: var(--dark-orange) !important;
+    color: white !important;
+}
+.medium-orange{
+    background: var(--medium-orange) !important;
+    color: white !important;
+}
+.light-orange{
+    background: var(--light-orange) !important;
+    color: white !important;
+}
+.dark-purple{
+    background: var(--dark-purple) !important;
+    color: white !important;
+}
+.dark-yellow{
+    background: var(--dark-yellow) !important;
+    color: white !important;
+}
+.dark-blue{
+    background: var(--dark-blue) !important;
+}
+.text-montserrat{
+    color: var(--light-gray);
+    font-weight: 500;
+}
+.bar{
+    height: 55px;
+    padding-right: 2rem;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    border: 0px solid;
+}
+.menu a{
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}

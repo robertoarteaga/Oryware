@@ -1,6 +1,20 @@
 $(document).foundation()
 AOS.init();
 
+
+
+$('.button').click(function(){
+  visit_resp = parseFloat($('input:radio[name=visitas]:checked').val());
+  certi_resp = parseFloat($('input:radio[name=certificacion]:checked').val());  
+  redes_resp = parseFloat($('input:radio[name=redes]:checked').val());
+  venta_resp = parseFloat($('input:radio[name=ventas]:checked').val());
+  console.log(visit_resp, certi_resp, redes_resp, venta_resp);
+  $('#resultados').addClass('show')
+  res_final = visit_resp + certi_resp + redes_resp + venta_resp;
+  console.log(res_final);
+});
+
+
 Highcharts.chart('container', {
     chart: {
       plotBackgroundColor: null,
@@ -53,26 +67,26 @@ Highcharts.chart('container', {
     }]
   });
   
-  Highcharts.chart('container2', {
-    data: {
-      table: 'datatable'
-    },
-    chart: {
-      type: 'column'
-    },
+Highcharts.chart('container2', {
+  data: {
+    table: 'datatable'
+  },
+  chart: {
+    type: 'column'
+  },
+  title: {
+    text: 'Data extracted from a HTML table in the page'
+  },
+  yAxis: {
+    allowDecimals: false,
     title: {
-      text: 'Data extracted from a HTML table in the page'
-    },
-    yAxis: {
-      allowDecimals: false,
-      title: {
-        text: 'Units'
-      }
-    },
-    tooltip: {
-      formatter: function () {
-        return '<b>' + this.series.name + '</b><br/>' +
-          this.point.y + ' ' + this.point.name.toLowerCase();
-      }
+      text: 'Units'
     }
-  });
+  },
+  tooltip: {
+    formatter: function () {
+      return '<b>' + this.series.name + '</b><br/>' +
+        this.point.y + ' ' + this.point.name.toLowerCase();
+    }
+  }
+});

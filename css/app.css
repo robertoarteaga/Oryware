@@ -64,3 +64,10 @@ section{
     outline: none;
     list-style: none;
 }
+
+.hide{
+    display: none;
+}
+.show{
+    display: block !important;
+}

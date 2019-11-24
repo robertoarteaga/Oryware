@@ -426,58 +426,55 @@
         </div>
     </div>
     <div class="row margin-bottom-3">
-            <div class="column">
-                <div class="card small-12 medium-orange" style="padding: 2rem;">
-                    <h4>Medio se cumple:</h4>
-                    <p>- Es necesario promocionar más a la marca por medio de las redes sociales para aumentar las visitas y el número de clientes potenciales.</p>
-                    <p>- Se debe motivar y apoyar al personal de la empresa a certificarse y mantenerse actualizado para tener productos de calidad y prestigio en el mercado.</p>
-                    <p>- Establecer relaciones más cercanas con los clientes frecuentes a través de redes sociales.</p> 
-                    <p>- Ofrecerles servicios adicionales a los clientes además de las páginas web.</p>
-                </div>
+        <div class="column hide" id="r-negativo">
+            <div class="card small-12 medium-orange" style="padding: 2rem;">
+                <h4>No se cumple:</h4>
             </div>
         </div>
+        <div class="column hide" id="r-neutro">
+            <div class="card small-12 medium-orange" style="padding: 2rem;">
+                <h4>Medio se cumple:</h4>
+                <p>- Es necesario promocionar más a la marca por medio de las redes sociales para aumentar las visitas y el número de clientes potenciales.</p>
+                <p>- Se debe motivar y apoyar al personal de la empresa a certificarse y mantenerse actualizado para tener productos de calidad y prestigio en el mercado.</p>
+                <p>- Establecer relaciones más cercanas con los clientes frecuentes a través de redes sociales.</p> 
+                <p>- Ofrecerles servicios adicionales a los clientes además de las páginas web.</p>
+            </div>
+        </div>
+        <div class="column hide" id="r-postitivo">
+            <div class="card small-12 medium-orange" style="padding: 2rem;">
+                <h4>Se cumple:</h4>
+            </div>
+        </div>
+        </div>
     <div class="row">
-        <div class="column small-6 text-center">
+        <!-- <div class="column small-6 text-center">
             <h2>Situación actual</h2>
             <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
-        </div>
-        <div class="column small-6 text-center">
-            <h2>Situación ideal</h2>
+        </div> -->
+        <div class="column small-12 text-center" sty>
+            <!-- <h2>Situación ideal</h2> -->
                 <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
-                <table id="datatable">
+                <table id="datatable" class="hide">
                   <thead>
                     <tr>
                       <th></th>
-                      <th>Jane</th>
-                      <th>John</th>
+                      <th>Actual</th>
+                      <th>Ideal</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <th>Apples</th>
-                      <td>3</td>
-                      <td>4</td>
+                    <tr id="visitas">
+                      <th >Visitas</th>
                     </tr>
-                    <tr>
-                      <th>Pears</th>
-                      <td>2</td>
-                      <td>0</td>
+                    <tr id="certificaciones">
+                      <th>Certificaciones</th>
                     </tr>
-                    <tr>
-                      <th>Plums</th>
-                      <td>5</td>
-                      <td>11</td>
+                    <tr id="redes">
+                      <th>Redes</th>
                     </tr>
-                    <tr>
-                      <th>Bananas</th>
-                      <td>1</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <th>Oranges</th>
-                      <td>2</td>
-                      <td>4</td>
+                    <tr id="ventas">
+                      <th>Ventas</th>
                     </tr>
                   </tbody>
                 </table>

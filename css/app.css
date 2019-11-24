@@ -1,15 +1,14 @@
 *{
     font-family: 'Montserrat';
     scroll-behavior: smooth !important;
-    color: #444444 !important;
 }
 :root{
-    --dark-orange: #a3a1fb;
-    --medium-orange: #56d9fe;
+    --dark-orange: #2EC4B6;
+    --medium-orange: #E71D36;
     --light-orange: #ff8373;
-    --dark-purple: #7A5C61;
-    --dark-yellow: #ffda83;
-    --dark-blue: #4f6d7a;
+    --dark-purple: #FF9F1C;
+    --dark-yellow: #4E598C;
+    --dark-blue: #5F0F40;
 }
 .card p{
     color: white !important;

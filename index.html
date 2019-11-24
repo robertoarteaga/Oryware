@@ -8,10 +8,13 @@
         <link rel="stylesheet" href="css/foundation.css" />
         <!-- Insert this within your head tag and after foundation.css -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
+        
         <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="css/aos.css">
         <script defer src="js/vendor/jquery.js"></script>
         <script def-er src="js/vendor/what-input.js"></script>
         <script defer src="js/vendor/foundation.js"></script>
+        <script defer src="js/aos.js"></script>
         <script defer src="js/app.js"></script>
       </head>
 <body>
@@ -21,22 +24,22 @@
                 <div class="top-bar-right">
                 <ul class="menu align-center" style="background: #fff;">
                     <li>
-                        <a href="">Inicio</a>
+                        <a href="#section1">Inicio</a>
                     </li>
                     <li>
-                        <a href="">Historia</a>
+                        <a href="#section2">Historia</a>
                     </li>
                     <li>
-                        <a href="">Objetivos</a>
+                        <a href="#section3">Objetivos</a>
                     </li>
                     <li>
-                        <a href="">Encuesta</a>
+                        <a href="#section4">Encuesta</a>
                     </li>
                 </ul>
                 </div>
             </div>
         </div>
-<section>
+<section id="section1">
     <style>
         #background{
             height: 100%;
@@ -55,7 +58,7 @@
     <img src="img/bg.png" alt="" id="background">
 </section>
     <div id="tour"></div>
-<section style="padding-top: 4rem; padding-bottom: 20rem;">
+<section style="padding-top: 4rem; padding-bottom: 20rem;" id="section2">
     <div class="row small-12 text-center">
         <div class="column">
             <h2>Historia</h2>
@@ -71,7 +74,7 @@
     </div>
 </section>
 <div id="tour"></div>
-<section style="padding-top: 4rem; padding-bottom: 20rem;">
+<section style="padding-top: 4rem; padding-bottom: 20rem;" id="section3">
     <div class="row text-center">
         <div class="column">
             <h2>Metas</h2>
@@ -92,47 +95,37 @@
     <div class="row align-spaced">
         <div class="column small-12 text-center">
             <h2 >Submetas</h2>
-            <button id="holaaa"  class="button">Hola</button>
         </div>
     </div>
-    <div class="row" style="margin-top: 4rem;">
-        <div animation-in="slideInRight" animation-out="slideOutUp" class="column small-4 align-center">
+    <div class="row" style="margin-top: 4rem;" data-aos="fade-up" data-aos-duration="2000">
+        <div class="column small-4 align-center">
             <div class="card text-center dark-orange" style="padding: 1rem; box-sizing: border-box;">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam placeat saepe quisquam earum ea laudantium recusandae libero maiores in delectus veniam quis cumque non, sed atque quaerat cupiditate. Natus.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem minus beatae nesciunt porro omnis fugiat saepe minima, ipsum unde vero perspiciatis mollitia ut distinctio, sequi nisi dolore accusamus, temporibus alias.
-                </p>
+                <p>Reducir el 9.3% de gastos innecesarios en el departamento de contabilidad para obtener los fondos necesarios para financiar capacitaciones a mediados noviembre de 2019</p>
             </div>
         </div>
-        <div animation-in="slideInRight" animation-out="slideOutUp" class="column small-4">
+        <div class="column small-4">
             <div class="card text-center medium-orange" style="padding: 1rem; box-sizing: border-box;">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam placeat saepe quisquam earum ea laudantium recusandae libero maiores in delectus veniam quis cumque non, sed atque quaerat cupiditate. Natus.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem minus beatae nesciunt porro omnis fugiat saepe minima, ipsum unde vero perspiciatis mollitia ut distinctio, sequi nisi dolore accusamus, temporibus alias.
-                </p>
+                <p>Contratar a 3 personas que conformarán el departamento de marketing a principios de noviembre de 2019 que se encargarán de mantener las redes sociales y la página web actualizada</p>
             </div>
         </div>
-        <div animation-in="slideInRight" animation-out="slideOutUp" class="column small-4" id="ho">
+        <div class="column small-4" id="ho">
             <div class="card text-center light-orange" style="padding: 1rem; box-sizing: border-box;">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam placeat saepe quisquam earum ea laudantium recusandae libero maiores in delectus veniam quis cumque non, sed atque quaerat cupiditate. Natus.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem minus beatae nesciunt porro omnis fugiat saepe minima, ipsum unde vero perspiciatis mollitia ut distinctio, sequi nisi dolore accusamus, temporibus alias.
-                </p>
+                <p>Reunirse con diversas empresas por medio del departamento de relaciones públicas durante el mes de noviembre para crear lazos y ofrecer los servicios con los que se cuentan</p>
             </div>
         </div>
-        <div animation-in="slideInRight" animation-out="slideOutUp" class="column small-4">
+        <div class="column small-4">
             <div class="card text-center dark-purple" style="padding: 1rem; box-sizing: border-box;">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam placeat saepe quisquam earum ea laudantium recusandae libero maiores in delectus veniam quis cumque non, sed atque quaerat cupiditate. Natus.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem minus beatae nesciunt porro omnis fugiat saepe minima, ipsum unde vero perspiciatis mollitia ut distinctio, sequi nisi dolore accusamus, temporibus alias.
-                </p>
+                <p>Capacitar al departamento de desarrollo para apegarse a los estándares de calidad más relevantes de la industria durante la primera mitad de noviembre de 2019</p>
             </div>
         </div>
-            <div animation-in="slideInRight" animation-out="slideOutUp" class="column small-4">
+            <div class="column small-4">
                 <div class="card text-center dark-yellow" style="padding: 1rem; box-sizing: border-box;">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam placeat saepe quisquam earum ea laudantium recusandae libero maiores in delectus veniam quis cumque non, sed atque quaerat cupiditate. Natus.
-                        </p>
+                    <p>Capacitar al director general en marketing durante la primera mitad de noviembre de 2019</p>
                 </div>
             </div>  
     </div>
 </section>
-<div id="tour" style="display: none;"></div>
+<div id="tour"style="display: none;"></div>
 <section style="display: none;">
     <div class="row margin-vertical-3">
         <div class="column small-12 text-center ">
@@ -168,7 +161,7 @@
     </div>
 </section>
 <div id="tour"></div>
-<section class="margin-bottom-3">
+<section class="margin-bottom-3" id="section4">
     <div class="row text-center margin-vertical-3">
         <div class="column small-12">
             <h2>Preguntas</h2>
@@ -182,67 +175,238 @@
     <!-- PRIMERA SECCION DE PREGUNTAS -->
     <div class="row margin-bottom-2">
         <div class="column small-6">
-            <p>1. ¿Cuánto tiempo lleva la empresa en el mercado?</p>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
+            <form>
+                <p>1. ¿Cuánto tiempo lleva la empresa en el mercado?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">1 año o menos</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">3 años o menos</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">5 años o más</label>
+                </div>
+            </form>
         </div>
         <div class="column small-6">
-            <p>2. ¿Cuál es la cantidad de clientes que tiene?</p>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
+            <form>
+                <p>2. ¿Cuál es la cantidad de clientes que tiene?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Entre 0 y 10</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Entre 10 y 20</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Más de 30</label>
+                </div>
+            </form>
         </div>
     </div>
     <!-- SEGUNDA SECCION DE PREGUNTAS -->
     <div class="row">
         <div class="column small-6">
-            <p>3. ¿Cuánto tiempo lleva la empresa en el mercado?</p>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
+            <form>
+                <p>3. ¿En qué porcentaje han aumentado las visitas de la pagina de la empresa?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">0 - 25%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">25 - 50%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">50 - 75%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Mas de 75%</label>
+                </div>
+            </form>
         </div>
         <div class="column small-6">
-            <p>4. ¿Cuál es la cantidad de clientes que tiene?</p>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
-            <div>
-                <input type="radio" id="huey" name="drone" value="huey" checked>
-                <label for="huey">Huey</label>
-            </div>
+            <form>
+                <p>4. ¿Qué porcentaje de empleados tiene un certificación</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">0 - 25%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">25 - 50%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">50 - 75%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Mas de 75%</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- SEGUNDA SECCION DE PREGUNTAS -->
+    <div class="row">
+        <div class="column small-6">
+            <form>
+                <p>5. ¿La empresa tiene certificaciones?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Si</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">No</label>
+                </div>
+            </form>
+        </div>
+        <div class="column small-6">
+            <form>
+                <p>6. ¿La empresa tiene la certificacion ISO 9001:2015?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Si</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">No</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- SEGUNDA SECCION DE PREGUNTAS -->
+    <div class="row">
+        <div class="column small-6">
+            <form>
+                <p>7. ¿En qué porcentaje se han usado las redes sociales para la promoción de la empresa?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">0 - 25%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">25 - 50%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">50 - 75%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Mas de 75%</label>
+                </div>
+            </form>
+        </div>
+        <div class="column small-6">
+            <form>
+                <p>8. ¿Cuál ha sido la red social que ha usado como principal medio de promoción?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Facebook</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Twitter</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Instagram</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Otras</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- SEGUNDA SECCION DE PREGUNTAS -->
+    <div class="row">
+        <div class="column small-6">
+            <form>
+                <p>9. ¿Cuántos empleados tiene la empresa?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Menos de 10</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Entre 10 y 50</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Entre 50 y 200</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Más de 200</label>
+                </div>
+            </form>
+        </div>
+        <div class="column small-6">
+            <form>
+                <p>10. ¿Qué tan relevante se considera respecto a su competencia?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Mucho</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Intermedio</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Poco</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- SEGUNDA SECCION DE PREGUNTAS -->
+    <div class="row">
+        <div class="column small-6">
+            <form>
+                <p>11. ¿En qué porcentaje han aumentado las ventas?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">0 - 25%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">25 - 50%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">50 - 75%</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Mas de 75%</label>
+                </div>
+            </form>
+        </div>
+        <div class="column small-6">
+            <form>
+                <p>12. ¿Ha realizado un estudio para identificar las características de sus clientes?</p>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">Si</label>
+                </div>
+                <div>
+                    <input type="radio" id="respuesta" name="drone" value="respuesta">
+                    <label for="respuesta">No</label>
+                </div>
+            </form>
+        </div>
+        <div class="column small-4 margin-top-2">
+            <button class="button">Aceptar</button>
         </div>
     </div>
 </section>

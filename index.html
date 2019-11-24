@@ -5,10 +5,8 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Foundation for Sites</title>
+        <!-- Foundation framework -->
         <link rel="stylesheet" href="css/foundation.css" />
-        <!-- Insert this within your head tag and after foundation.css -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
-        
         <link rel="stylesheet" href="css/app.css" />
         <link rel="stylesheet" href="css/aos.css">
         <script defer src="js/vendor/jquery.js"></script>
@@ -16,6 +14,16 @@
         <script defer src="js/vendor/foundation.js"></script>
         <script defer src="js/aos.js"></script>
         <script defer src="js/app.js"></script>
+
+        <!-- Highcharts -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
       </head>
 <body>
     <div class="sticky sticky-topbar is-stuck" >
@@ -86,12 +94,12 @@
                     web y redes sociales.</p>
         </div>
         <div class="column text-center">
-            <input type="button" class="hollow button primary" value="Leer más">
+            <a href="#more" class="button">Leer más</a> 
         </div>
     </div>
 </section>
 <div id="tour"></div>
-<section style="padding-top: 4rem; padding-bottom: 8rem;">
+<section style="padding-top: 4rem; padding-bottom: 8rem;" id="more">
     <div class="row align-spaced">
         <div class="column small-12 text-center">
             <h2 >Submetas</h2>
@@ -407,6 +415,72 @@
         </div>
         <div class="column small-4 margin-top-2">
             <button class="button">Aceptar</button>
+        </div>
+    </div>
+</section>
+<section>
+    <div id="tour" class="margin-bottom-3"></div>
+    <div class="row margin-bottom-3">
+        <div class="column small-12 text-center">
+            <h2>Resultados</h2>
+        </div>
+    </div>
+    <div class="row margin-bottom-3">
+            <div class="column">
+                <div class="card small-12 medium-orange" style="padding: 2rem;">
+                    <h4>Medio se cumple:</h4>
+                    <p>- Es necesario promocionar más a la marca por medio de las redes sociales para aumentar las visitas y el número de clientes potenciales.</p>
+                    <p>- Se debe motivar y apoyar al personal de la empresa a certificarse y mantenerse actualizado para tener productos de calidad y prestigio en el mercado.</p>
+                    <p>- Establecer relaciones más cercanas con los clientes frecuentes a través de redes sociales.</p> 
+                    <p>- Ofrecerles servicios adicionales a los clientes además de las páginas web.</p>
+                </div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="column small-6 text-center">
+            <h2>Gráfica 1</h2>
+            <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+        </div>
+        <div class="column small-6 text-center">
+            <h2>Gráfica 2</h2>
+                <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+                <table id="datatable">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Jane</th>
+                      <th>John</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Apples</th>
+                      <td>3</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <th>Pears</th>
+                      <td>2</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <th>Plums</th>
+                      <td>5</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <th>Bananas</th>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <th>Oranges</th>
+                      <td>2</td>
+                      <td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
         </div>
     </div>
 </section>
